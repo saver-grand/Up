@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const app = express();
 
 const ORIGIN = process.env.ORIGIN; 
-// example: ORIGIN="http://example.com/1093"
+ORIGIN="http://143.44.136.67:6060/001/2/ch00000090990000001143/manifest.mpd?virtualDomain=001.live_hls.zte.com&JITPDRMType=Widevine&m4s_min=1"
 
 app.get("/manifest.mpd", async (req, res) => {
   const url = `${ORIGIN}/manifest.mpd${req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : ""}`;
