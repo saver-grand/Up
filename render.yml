@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mpd-proxy
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: ORIGIN
+        value: "http://example.com/1093"
