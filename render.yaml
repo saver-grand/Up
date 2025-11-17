@@ -7,4 +7,4 @@ services:
     startCommand: "node server.js"
     envVars:
       - key: ORIGIN
-        value: "http://example.com/1093"
+        value: "http://143.44.136.67:6060/001/2/ch00000090990000001143"
